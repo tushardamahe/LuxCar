@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f97316;
+  --color-primary-dull: #ea580c;
+  --color-light: #f1f5f9;
+  --color-borderColor: #c4c7d2;
+  --color-dark: #131314;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--color-dark);
+  color: white;
+  margin: 0;
+}
+
+.icon-orange {
+  filter: brightness(0) saturate(100%) invert(54%) sepia(94%) saturate(748%)
+    hue-rotate(1deg) brightness(98%) contrast(105%);
+}
+
+@font-face {
+  font-family: "Nevera";
+  src: url("/fonts/Nevera.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-nevera {
+  font-family: "Nevera", sans-serif;
+}
+
+@keyframes cubeMove {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-20%) scale(1.02) rotate(1deg);
+  }
+}
+
+.animate-cube {
+  animation: cubeMove 18s linear infinite alternate;
+}
